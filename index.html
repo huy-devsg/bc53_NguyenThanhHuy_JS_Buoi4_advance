@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bài tập buổi 4 nâng cao</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <div class="container">
+        <div class="exam">
+          <div class="row container">
+            <div class="col-3">
+              <div
+                class="nav flex-column nav-pills text-center"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <a
+                  class="nav-link active"
+                  id="bai1-tab""
+                  data-mdb-toggle="pill"
+                  href="#bai1"
+                  role="tab"
+                  aria-controls="bai1"
+                  aria-selected="true"
+                  ><i class="fa-solid fa-book"></i>&ensp;
+                  Bài 1</a
+                >
+                <a
+                  class="nav-link"
+                  id="bai2-tab"
+                  data-mdb-toggle="pill"
+                  href="#bai2"
+                  role="tab"
+                  aria-controls="bai2"
+                  aria-selected="false"
+                  ><i class="fa-solid fa-book"></i>&ensp;
+                  Bài 2</a
+                >
+                <a
+                  class="nav-link"
+                  id="bai3-tab"
+                  data-mdb-toggle="pill"
+                  href="#bai3"
+                  role="tab"
+                  aria-controls="bai3"
+                  aria-selected="false"
+                  ><i class="fa-solid fa-book"></i>&ensp;
+                  Bài 3</a
+                >
+                <a
+                  class="nav-link"
+                  id="bai4-tab"
+                  data-mdb-toggle="pill"
+                  href="#bai4"
+                  role="tab"
+                  aria-controls="bai4"
+                  aria-selected="false"
+                  ><i class="fa-solid fa-book"></i>&ensp;
+                  Bài 4</a
+                >
+              </div>
+            </div>
+          
+            <div class="col-9">
+              <div class="tab-content" id="tab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="bai1"
+                  role="tabpanel"
+                  aria-labelledby="bai1-tab"
+                >
+                <h3>Viết chương trình tìm ngày tháng năm</h3>
+                <form action="" id="findDate">
+                  <input type="date" id="dateInput" placeholder="Nhập vào ngày tháng năm cần kiểm tra" value="">
+                  <button type="submit">Tìm</button>
+                </form>
+                <div class="result" id="result">
+                  👉
+                </div>
+              </div>
+                <div
+                  class="tab-pane fade"
+                  id="bai2"
+                  role="tabpanel"
+                  aria-labelledby="bai2-tab"
+                >
+                <h3>Viết chương trình tìm số ngày của tháng</h3>
+                <form action="" id="findDay">
+                  <input type="month" id="monthInput" placeholder="Nhập vào tháng và năm cần kiểm tra" value="">
+                  <button type="submit">Xác nhận</button>
+                </form>
+                <div class="result" id="result2">
+                  👉
+                </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="bai3"
+                  role="tabpanel"
+                  aria-labelledby="bai3-tab"
+                >
+                <h3>Viết chương trình đọc số</h3>
+                <form action="" id="speechNum">
+                  <input type="number" id="b3Num" min="100" max="999" placeholder="Nhập số có 3 chữ số" value="">
+                  <button type="submit">Đọc</button>
+                </form>
+                <div class="result" id="result3">
+                  👉
+                </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="bai4"
+                  role="tabpanel"
+                  aria-labelledby="bai4-tab"
+                >
+                <h3>Viết chương trình tìm khoảng cách xa nhất theo tọa độ</h3>
+                <form action="" id="distance">
+                  <input type="number" id="xSV1" placeholder="Tọa độ X sinh viên thứ nhất" value="">
+                  <input type="number" id="ySV1" placeholder="Tọa độ Y sinh viên thứ nhất" value="">
+                  <input type="number" id="xSV2" placeholder="Tọa độ X sinh viên thứ hai" value="">
+                  <input type="number" id="ySV2" placeholder="Tọa độ Y sinh viên thứ hai" value="">
+                  <input type="number" id="xSV3" placeholder="Tọa độ X sinh viên thứ ba" value="">
+                  <input type="number" id="ySV3" placeholder="Tọa độ Y sinh viên thứ ba" value="">
+                  <p>Tọa độ của trường mặc định {X : 5 , Y : 10}</p>
+                  <button type="submit">Tính</button>
+                </form>
+                <div class="result" id="result4">
+                  👉
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+></script>  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
